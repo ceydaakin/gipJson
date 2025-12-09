@@ -9,9 +9,16 @@
 
 
 gipJson::gipJson() {
+    // Initialize the JSON object to an empty state
+    js = nlohmann::json::object();
+    // Optional: Log initialization (if logging is part of the project)
+    // std::cout << "gipJson object created." << std::endl;
 }
 
 gipJson::~gipJson() {
+    // Optional: Log destruction (if logging is part of the project)
+    // std::cout << "gipJson object destroyed." << std::endl;
+    // No dynamic resources to clean up in this implementation
 }
 
 void gipJson::loadJsonFile(const std::string& filename) {
